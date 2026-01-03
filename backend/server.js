@@ -1,6 +1,6 @@
 const app = require('./src/app')
 const connectdb = require('./src/db/db')
-
+require('dotenv').config()
 connectdb().then(() => {
     app.listen(3000, () => {
         console.log('server at 3000')
